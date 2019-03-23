@@ -47,7 +47,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.5.1</version>
+				<version>3.8.0</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -80,7 +80,7 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<version>3.0.0</version>
+				<version>3.1.0</version>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<configuration>
 					<includeDependencySources>true</includeDependencySources>
@@ -88,12 +88,25 @@
 						<dependencySourceInclude>com.ionic:ionic-sdk</dependencySourceInclude>
 					</dependencySourceIncludes>
 					<excludePackageNames>com.ionic.sdk.core.*:com.ionic.sdk.crypto*:com.ionic.sdk.cipher*:com.ionic.sdk.httpclient*:com.ionic.sdk.agent.cipher*</excludePackageNames>
+					<additionalOptions>
+						<additionalOption>-Xdoclint:none</additionalOption>
+					</additionalOptions>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<version>1.56</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

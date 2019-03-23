@@ -434,7 +434,7 @@ public class IonicAzureStorageSampleApp {
         switch (action) {
             case PUTFILE:
 
-                if (args.length >= filePathArg) {
+                if (args.length > filePathArg) {
                     String srcFilePath =
                             Paths.get(new String(args[filePathArg])).toFile().getCanonicalPath();
 
