@@ -482,9 +482,10 @@ public class IonicAzureStorageSampleApp {
 
     public static MetadataMap getMetadataMap() {
         MetadataMap applicationMetadata = new MetadataMap();
-        applicationMetadata.set("ionic-application-name", "IonicAzureStorageExample");
+        applicationMetadata.set("ionic-application-name", "MachinaAzureStorageExample");
         applicationMetadata.set("ionic-application-version", Version.getFullVersion());
-        applicationMetadata.set("ionic-client-type", "Cloud Connector");
+        applicationMetadata.set(
+                "ionic-client-type", "Machina Tools for Cloud Storage (Azure Storage Java)");
         applicationMetadata.set("ionic-client-version", Version.getFullVersion());
 
         return applicationMetadata;
