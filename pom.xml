@@ -8,7 +8,7 @@
     <groupId>com.ionic.cloudstorage</groupId>
     <artifactId>machina-tools-azure-storage</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
 
     <name>machina-tools-azure-storage</name>
     <description>Integration between the Ionic Platform and Microsoft Azure Blob Storage to leverage the Azure Storage SDK with Ionic managed keys.</description>
@@ -46,7 +46,7 @@
         <dependency>
             <groupId>com.ionic</groupId>
             <artifactId>ionic-sdk</artifactId>
-            <version>2.6.1</version>
+            <version>2.9.0</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish</groupId>
@@ -56,24 +56,24 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.11.2</version>
+            <version>2.14.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.microsoft.azure</groupId>
             <artifactId>azure-keyvault-cryptography</artifactId>
-            <version>1.2.2</version>
+            <version>1.2.4</version>
         </dependency>
         <dependency>
             <groupId>com.microsoft.azure</groupId>
             <artifactId>azure-storage</artifactId>
-            <version>8.6.0</version>
+            <version>8.6.5</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -126,6 +126,10 @@
                     <additionalOptions>
                         <additionalOption>-Xdoclint:none</additionalOption>
                     </additionalOptions>
+                    <bottom>
+                        You acknowledge your access, review and use of the documentation on this page is subject to the Ionic Security Inc.	&lt;a href="https://dev.ionic.com/use.html"&gt;DOCUMENTATION USE RIGHTS&lt;a&gt;. 
+                        © 2019-2021 Ionic Security Inc. All rights reserved.
+                    </bottom>
                 </configuration>
             </plugin>
             <plugin>
